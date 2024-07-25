@@ -1,5 +1,6 @@
-import { Rocket, Star, Satellite, Info } from "lucide-react";
+import { Rocket, Star, Satellite, Info, BookOpen } from "lucide-react";
 import Index from "./pages/Index.jsx";
+import SpaceFacts from "./pages/SpaceFacts.jsx";
 
 /**
  * Central place for defining the navigation items. Used for navigation components and routing.
@@ -10,6 +11,12 @@ export const navItems = [
     to: "/",
     icon: <Rocket className="h-4 w-4" />,
     page: <Index />,
+  },
+  {
+    title: "Space Facts",
+    to: "/space-facts",
+    icon: <BookOpen className="h-4 w-4" />,
+    page: <SpaceFacts />,
   },
   {
     title: "Explore",
