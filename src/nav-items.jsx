@@ -1,7 +1,8 @@
-import { Rocket, Star, Satellite, Info, BookOpen, Sun } from "lucide-react";
+import { Rocket, Star, Satellite, Info, BookOpen, Sun, Trello } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import SpaceFacts from "./pages/SpaceFacts.jsx";
 import SolarSystem from "./pages/SolarSystem.jsx";
+import Kanban from "./pages/Kanban.jsx";
 
 /**
  * Central place for defining the navigation items. Used for navigation components and routing.
@@ -42,5 +43,11 @@ export const navItems = [
     to: "/about",
     icon: <Info className="h-4 w-4" />,
     page: <div>About Page</div>,
+  },
+  {
+    title: "Kanban",
+    to: "/kanban",
+    icon: <Trello className="h-4 w-4" />,
+    page: <Kanban />,
   },
 ];
