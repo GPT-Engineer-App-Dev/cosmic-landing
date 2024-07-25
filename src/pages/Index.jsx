@@ -1,10 +1,13 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Rocket, Star, Satellite } from 'lucide-react';
+import SpaceAnimation from '@/components/SpaceAnimation';
 
 const Index = () => {
   return (
-    <div className="bg-gradient-to-b from-black to-blue-900 text-white">
+    <div className="relative text-white">
+      <SpaceAnimation />
+      <div className="relative z-10">
       {/* Hero Section */}
       <header className="container mx-auto px-4 py-16 text-center">
         <h1 className="text-5xl md:text-6xl font-bold mb-6">Explore the Cosmos</h1>
@@ -48,9 +51,10 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-center py-8">
+      <footer className="bg-black bg-opacity-50 text-center py-8">
         <p>&copy; 2024 Cosmic Explorers. All rights reserved.</p>
       </footer>
+      </div>
     </div>
   );
 };
