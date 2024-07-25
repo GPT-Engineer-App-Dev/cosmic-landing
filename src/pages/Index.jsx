@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Rocket, Star, Planet, Satellite } from 'lucide-react';
+import { Rocket, Star, Satellite } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -24,9 +24,9 @@ const Index = () => {
             description="Journey through distant galaxies and witness the birth of stars."
           />
           <FeatureCard
-            icon={<Planet className="h-12 w-12 text-red-400" />}
-            title="Planetary Wonders"
-            description="Explore diverse worlds, from gas giants to Earth-like exoplanets."
+            icon={<Satellite className="h-12 w-12 text-green-400" />}
+            title="Space Technology"
+            description="Learn about cutting-edge spacecraft and space stations."
           />
           <FeatureCard
             icon={<Satellite className="h-12 w-12 text-green-400" />}
