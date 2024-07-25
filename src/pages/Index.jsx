@@ -9,7 +9,7 @@ const Index = () => {
       <header className="container mx-auto px-4 py-16 text-center">
         <h1 className="text-5xl md:text-6xl font-bold mb-6">Explore the Cosmos</h1>
         <p className="text-xl md:text-2xl mb-8">Embark on a journey through the wonders of space</p>
-        <Button size="lg" className="bg-blue-500 hover:bg-blue-600">
+        <Button size="lg" className="bg-green-500 hover:bg-green-600">
           <Rocket className="mr-2 h-5 w-5" /> Start Your Adventure
         </Button>
       </header>
