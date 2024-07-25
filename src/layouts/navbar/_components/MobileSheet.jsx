@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Package2 } from "lucide-react";
 import { NavItem } from "./NavItem";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export const MobileSheet = ({ navItems }) => (
   <Sheet>
@@ -25,6 +26,7 @@ export const MobileSheet = ({ navItems }) => (
             {item.title}
           </NavItem>
         ))}
+        <ThemeToggle />
       </nav>
     </SheetContent>
   </Sheet>
