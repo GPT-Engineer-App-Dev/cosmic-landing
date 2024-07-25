@@ -4,7 +4,7 @@ import { Rocket, Star, Satellite } from 'lucide-react';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black to-blue-900 text-white">
+    <div className="bg-gradient-to-b from-black to-blue-900 text-white">
       {/* Hero Section */}
       <header className="container mx-auto px-4 py-16 text-center">
         <h1 className="text-5xl md:text-6xl font-bold mb-6">Explore the Cosmos</h1>
@@ -29,9 +29,9 @@ const Index = () => {
             description="Learn about cutting-edge spacecraft and space stations."
           />
           <FeatureCard
-            icon={<Satellite className="h-12 w-12 text-green-400" />}
-            title="Space Technology"
-            description="Learn about cutting-edge spacecraft and space stations."
+            icon={<Rocket className="h-12 w-12 text-red-400" />}
+            title="Space Missions"
+            description="Discover past, present, and future space exploration missions."
           />
         </div>
       </section>

@@ -1,4 +1,4 @@
-import { Rocket } from "lucide-react";
+import { Rocket, Star, Satellite, Info } from "lucide-react";
 import Index from "./pages/Index.jsx";
 
 /**
@@ -6,9 +6,27 @@ import Index from "./pages/Index.jsx";
  */
 export const navItems = [
   {
-    title: "Space Explorer",
+    title: "Home",
     to: "/",
     icon: <Rocket className="h-4 w-4" />,
     page: <Index />,
+  },
+  {
+    title: "Explore",
+    to: "/explore",
+    icon: <Star className="h-4 w-4" />,
+    page: <div>Explore Page</div>,
+  },
+  {
+    title: "Technology",
+    to: "/technology",
+    icon: <Satellite className="h-4 w-4" />,
+    page: <div>Technology Page</div>,
+  },
+  {
+    title: "About",
+    to: "/about",
+    icon: <Info className="h-4 w-4" />,
+    page: <div>About Page</div>,
   },
 ];
